@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/principal_style.css">
+    <link rel="shortcut icon" href="img/logo1.png">
+    <title>FROG.TV</title>
+</head>
+
+<body>
+    <div class="main">
+        <!--Navi e os elementos-->
+        <nav class="navi">
+
+            <div class="logo11">
+                <a id="logo" href="principal.html"><img src="img/logo.png"></a>
+            </div>
+            <ul>
+                <li>
+                    <a class="item" href="#films">Filmes</a>
+                </li>
+                <li>
+                    <a class="item" href="#séries">Séries</a>
+                </li>
+                <li>
+                    <a class="item" href="#animess">Animes</a>
+                </li>
+            </ul>
+
+            <div class="pesquisar">
+                <img src="img/lupa.png">
+                <form>
+
+                    <input type="caixapesquisa1" name="caixapesquisa" placeholder="  Buscar...">
+
+                </form>
+            </div>
+            <div class="fotoperfil"><a href="perfil.html"><img src="img/perfil.png"></a></div>
+
+            <!--Fontes-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Kumbh+Sans&display=swap"
+                rel="stylesheet">
+            <link href="https://fonts.cdnfonts.com/css/nats" rel="stylesheet">
+        </nav>
+        <section id="slide__showwww">
+            <img id="SlideShowww" alt="" />
+        </section>
+
+        <script>
+            // criando o slideshow da página home
+
+            // imagens dentro de um array
+            const imagens = [
+                '/img/serie1.jpg',
+                '/img/sugestão2.jpg',
+                '/img/sugestao3.jpg',
+            ];
+            //declarando a posição de inicio
+            let index = 0;
+            //declarando o tempo que as imagens vão passar em milisegundos
+            const SLIDE_SHOW_TIME_IN_MILLISECONDS = 3_000;
+
+            //criando a função chamada slideshow
+            function slideShow() {
+                // pegando a imagem no HTML pelo id e carregando as imagens
+                window.document.getElementById('SlideShowww').src = imagens[index];
+                // incrementando as imagens ex. se inicia na posição 0, depois 1, 2 e assim por diante
+                index++;
+                // se a posição da imagem for imagem a quantidade de imagens no array
+                if (index === imagens.length) {
+                    index = 0;
+                }
+                // setTimeout é uma função em javascript que executa o tempo nesse caso chama função e inicia o tempo
+                window.setTimeout(slideShow, SLIDE_SHOW_TIME_IN_MILLISECONDS);
+            }
+            //executa toda a função slideShow
+            slideShow();
+
+        </script>
+
+        <section id="destaques">
+            <h1 id="titulo1">DESTAQUES DA SEMANA</h1>
+            <div class="linhaverde"></div>
+            <div class="container1">
+                <div class="caroselslide">
+                        <!--Slides-->
+                    <div class="slides">
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <input type="radio" name="slide" id="slide3">
+                            <!--Cards do Slide-->
+                        <div class="slide s1">
+                            <div class="card1" data-name="agretsuko"> <a href="principal.html"><img
+                                        src="img/destaque1.png" /></a></div>
+
+                            <div class="card1" data-name="hellsing"> <a href="principal.html"><img src="img/destaque2.png" /></a></div>
+
+                            <div class="card1" data-name="dragonball"> <a href="principal.html"><img src="img/destaque3.png" /></a></div>
+
+                            <div class="card1" data-name="death note"> <a href="principal.html"><img src="img/destaque4.jpg" /></a></div>
+
+                            <div class="card1" data-name="one piece"><a href="principal.html"><img src="img/destaque5.png" /></a></div>
+
+                            <div class="card1" data-name="fullmetal alchemist"> <a href="principal.html"><img src="img/destaque6.jpg" /></a></div>
+
+                            <div class="card1" data-name="cobra kai"> <a href="principal.html"><img src="img/destaques7.jpeg" /></a></div>
+
+                            <div class="card1" data-name="o poderoso chefao"> <a href="principal.html"><img src="img/destaque8.jpeg" /></a></div>
+
+                            <div class="card1" data-name="matrix"> <a href="principal.html"><img src="img/destaque9.jpeg" /></a></div>
+
+                            <div class="card1" data-name="game of thrones"> <a href="principal.html"><img src="img/destaque10.jpeg" /></a></div>
+
+                            <div class="card1" data-name="evangelion"> <a href="principal.html"><img src="img/destaque11.jpeg" /></a></div>
+
+                            <div class="card1" data-name="cowboy bepop"> <a href="principal.html"><img src="img/destaque12.jpeg" /></a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="linhaverde"></div>
+            <section id="films">
+                <!--Bolinhas de Navegação-->
+                <div class="bolinhas">
+                    <label class="bolinha" for="slide1"></label>
+                    <label class="bolinha" for="slide2"></label>
+                    <label class="bolinha" for="slide3"></label>
+                </div>
+            </section>
+        </section>
+        <h1 id="titulo2">Filmes </h1>
+        <section id="filmes">
+            <div class="carosel2">
+                <div class="caroselslide2">
+
+                    <div class="slides">
+                        <input type="radio" name="slide" id="slide11" checked>
+                        <input type="radio" name="slide" id="slide22">
+                        <input type="radio" name="slide" id="slide33">
+
+                        <div class="slide s1">
+                            <div class="card" data-name="forest gump"> <a href="video1.html"><img src="img/filmes.png" /></a></div>
+
+                            <div class="card" data-name="onze homens e um segredo"> <a href="video1.html"><img src="img/filme2.jpg" /></a></div>
+
+                            <div class="card" data-name="batman cavaleiro das trevas"> <a href="video1.html"><img src="img/filme3.jpg" /></a></div>
+
+                            <div class="card" data-name="O profissional"> <a href="video1.html"><img src="img/filme4.png" /></a></div>
+
+                            <div class="card" data-name="john wick de volta ao jogo"><a href="video1.html"><img src="img/filme5.png" /></a></div>
+
+                            <div class="card" data-name="john wick um dia novo para matar"> <a href="video1.html"><img src="img/filme6.png" /></a></div>
+
+                            <div class="card" data-name="john wick Parabellum "> <a href="video1.html"><img src="img/filme7.png" /></a></div>
+
+                            <div class="card" data-name="john wick 4"> <a href="video1.html"><img src="img/filme8.png" /></a></div>
+
+                            <div class="card" data-name="bastardos inglorios"> <a href="video1.html"><img src="img/filme9.png" /></a></div>
+
+                            <div class="card" data-name="interstellar"> <a href="video1.html"><img src="img/filme10.png" /></a></div>
+
+                            <div class="card" data-name="velozes e furiosos tokyo"> <a href="video1.html"><img src="img/filme11.png" /></a></div>
+
+                            <div class="card" data-name="casa mostro"> <a href="video1.html"><img src="img/filme12.png" /></a></div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="séries">
+                <div class="bolinhas1">
+                    <label class="bolinha" for="slide11"></label>
+                    <label class="bolinha" for="slide22"></label>
+                    <label class="bolinha" for="slide33"></label>
+                </div>
+            </section>
+        </section>
+        <h1 id="titulo3">Séries</h1>
+        <section id="series">
+            <div class="carosel2">
+                <div class="caroselslide">
+
+                    <div class="slides">
+                        <input type="radio" name="slide" id="slide111" checked>
+                        <input type="radio" name="slide" id="slide222">
+                        <input type="radio" name="slide" id="slide333">
+
+                        <div class="slide s1">
+                            <div class="card" data-name="breaking bad"> <a href="video2.html"><img src="img/serie1.jpg" /></a></div>
+
+                            <div class="card" data-name="peaky blinders"> <a href="video2.html"><img src="img/serie2.png" /></a></div>
+
+                            <div class="card" data-name="lista negra"> <a href="video2.html"><img src="img/serie3.png" /></a></div>
+
+                            <div class="card" data-name="ncsi"> <a href="video2.html"><img src="img/serie4.png" /></a></div>
+
+                            <div class="card" data-name="house"><a href="video2.html"><img src="img/serie5.png" /></a></div>
+
+                            <div class="card" data-name="suits"> <a href="video2.html"><img src="img/serie6.png" /></a></div>
+
+                            <div class="card" data-name="the office"> <a href="video2.html"><img src="img/serie7.png" /></a></div>
+
+                            <div class="card" data-name="rick and morty"> <a href="video2.html"><img src="img/serie8.png" /></a></div>
+
+                            <div class="card" data-name="star wars mandalorian"> <a href="video2.html"><img src="img/serie9.png" /></a></div>
+
+                            <div class="card" data-name="star wars clone wars"> <a href="video2.html"><img src="img/serie10.png" /></a></div>
+
+                            <div class="card" data-name="top gear"> <a href="video2.html"><img src="img/serie11.png" /></a></div>
+
+                            <div class="card" data-name="doctor who"> <a href="video2.html"><img src="img/serie12.png" /></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="animess">
+                <div class="bolinhas1">
+                    <label class="bolinha" for="slide111"></label>
+                    <label class="bolinha" for="slide222"></label>
+                    <label class="bolinha" for="slide333"></label>
+                </div>
+            </section>
+
+        </section>
+        <h1 id="titulo3">Animes</h1>
+        <section id="animes">
+            <div class="carosel2">
+                <div class="caroselslide">
+
+                    <div class="slides">
+                        <input type="radio" name="slide" id="slide1111" checked>
+                        <input type="radio" name="slide" id="slide2222">
+                        <input type="radio" name="slide" id="slide3333">
+
+                        <div class="slide s1">
+                            <div class="card"  data-name="paprika"> <a href="video3.html"><img src="img/anime1.jpg" /></a></div>
+
+                            <div class="card"  data-name="mob psycho 100"> <a href="video3.html"><img src="img/anime2.jpg" /></a></div>
+
+                            <div class="card"  data-name="moshocu tensei"> <a href="video3.html"><img src="img/anime3.png" /></a></div>
+
+                            <div class="card"  data-name="one punch man"> <a href="video3.html"><img src="img/anime4.png" /></a></div>
+
+                            <div class="card"  data-name="devilman crybaby"><a href="video3.html"><img src="img/anime5.png" /></a></div>
+
+                            <div class="card"  data-name="dororo"> <a href="video3.html"><img src="img/anime6.png" /></a></div>
+
+                            <div class="card"  data-name="naruto"> <a href="video3.html"><img src="img/anime7.png" /></a></div>
+
+                            <div class="card"  data-name="baki hanma"> <a href="video3.html"><img src="img/anime8.png" /></a></div>
+
+                            <div class="card"  data-name="great pretender"> <a href="video3.html"><img src="img/anime9.png" /></a></div>
+
+                            <div class="card"  data-name="samurai champloo"> <a href="video3.html"><img src="img/anime10.png" /></a></div>
+
+                            <div class="card"  data-name="kotaro lives alone"> <a href="video3.html"><img src="img/anime11.jpg" /></a></div>
+
+                            <div class="card"  data-name="dohedoro"> <a href="video3.html"><img src="img/anime12.png" /></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="bolinha2">
+                <div class="bolinhas1">
+                    <label class="bolinha" for="slide1111"></label>
+                    <label class="bolinha" for="slide2222"></label>
+                    <label class="bolinha" for="slide3333"></label>
+                </div>
+            </section>
+
+        </section>
+
+        <main></main>
+
+        <footer>
+            <div class="linhaverde"></div>
+            <p>Nossos <a href="https://policies.google.com/terms" target="blank">Termos de Serviços</a>.</p>
+
+            <h4 id="sup"><a href="suporte.html">Suporte</h4></a>
+
+            <h3>©Copyright 2023 - Todos os direitos reservados</h3>
+        </footer>
+    </div>
+    <script>
+            /*Identificadores de todos A de cards para adicionar um evento de click*/
+        window.document.querySelectorAll(".card1 a, .card a").forEach((link) => {
+            link.addEventListener("click", (event) => {
+            })
+        })
+    
+        const SEARCH_SELECTOR = ".pesquisar input"
+        const CARDS_SELECTOR = ".card1, .card"
+        const cards = window.document.querySelectorAll(CARDS_SELECTOR)
+
+         /*Metodo de Pesquisar por meio do Id do Card*/
+        window.document.querySelector(SEARCH_SELECTOR).addEventListener("input", (event) => {
+
+            Array.from(cards).forEach((card) => {
+                if((card.dataset.name??"").includes(event.target.value))
+                card.style.display = "block"
+                else
+                card.style.display = "none"
+            }
+            )
+            
+
+        }
+        )
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: rgba(30, 30, 30, 1);
+
+}
+
+.navi {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 100px;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 3.66337px 3.66337px 0px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+
+}
+
+ul li a {
+    margin-top: 05px;
+}
+
+.logo11 {
+    width: 10px;
+    height: 10px;
+    margin-top: 05px;
+    margin-left: 15px;
+}
+
+.logo1 img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 100px;
+
+}
+
+.logo1 {
+    width: 50px;
+    height: 50px;
+
+}
+
+.pesquisar img {
+    width: 20px;
+    height: 20px;
+}
+
+#SlideShowww{
+    width: 100%;
+    height: 800px;
+    position: inherit;
+
+    
+}
+
+#slides__showwww{
+    height: 800px;
+    width: 100%;
+   
+}
+
+#destaques {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+
+
+
+
+
+}
+
+#filmes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    z-index: 2;
+
+}
+
+#series {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    z-index: 2;
+}
+
+#animes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    z-index: 2;
+}
+
+.slides input {
+    display: none;
+}
+
+.item {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    float: top;
+}
+
+nav ul li {
+    font-style: none;
+    display: inline-flex;
+    margin-left: 100px;
+    margin-right: -70px;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pesquisar {
+    position: fixed;
+    display: inline-flex;
+    flex-shrink: 0;
+    color: white;
+    text-decoration: none;
+    margin-top: -20px;
+    right: 60px;
+}
+
+.pesquisar input {
+    background-color: #252222;
+    width: 130px;
+    height: 22px;
+    border-radius: 5px;
+    box-shadow: none;
+    text-decoration: none;
+    color: white;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+}
+
+.pesquisar img {
+    margin-top: 02px;
+}
+
+.fotoperfil img {
+    display: inline-flex;
+    position: fixed;
+    right: 20px;
+    top: 25px;
+    margin-top: -09px;
+    width: 27px;
+}
+
+.pesquisar h4 {
+    color: #7C7A7A;
+    margin-left: 05px;
+    margin-top: 02px;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+#titulo1 {
+    color: white;
+    font-family: NATS;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 30px;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+
+}
+
+#titulo2 {
+    color: white;
+    font-family: Kumbh Sans;
+    text-decoration: none;
+    text-align: left;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    left: 0px;
+    margin-bottom: 10px;
+    margin-left: 37px;
+}
+
+#titulo3 {
+    color: white;
+    font-family: Kumbh Sans;
+    text-decoration: none;
+    text-align: left;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    left: 0px;
+    margin-bottom: 10px;
+    margin-left: 37px;
+}
+
+#titulo4 {
+    color: white;
+    font-family: Kumbh Sans;
+    text-decoration: none;
+    text-align: left;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    left: 0px;
+    margin-bottom: 10px;
+    margin-left: 37px;
+}
+
+.linhaverde {
+    background-color: #00D448;
+    width: 100%;
+    height: 2px;
+}
+
+.container1 {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.caroselslide {
+    height: 400px;
+    width: 99%;
+    overflow: hidden;
+}
+
+.caroselslide2 {
+    height: 300px;
+    width: 98%;
+    overflow: hidden;
+}
+
+.carosel2 {
+    height: 320px;
+    width: 97%;
+    overflow: hidden;
+    background-color: #303030;
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* posicionamento do carrosel*/
+.card {
+    width: 220px;
+    height: 300px;
+
+
+}
+
+.card1 {
+    width: 220px;
+    height: 360px;
+    border: 2px solid;
+
+}
+
+.card1 img {
+    border-radius: 10%;
+}
+
+.card img {
+    border-radius: 10%;
+}
+
+.slides {
+    display: flex;
+    width: 270%;
+    height: 100%;
+}
+
+.s1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    animation: transition 20s;
+}
+
+.slide {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked~.s1 {
+    margin-left: -0%;
+}
+
+#slide2:checked~.s1 {
+    margin-left: -33.3%;
+}
+
+#slide3:checked~.s1 {
+    margin-left: -65.9%;
+}
+
+#slide11:checked~.s1 {
+    margin-left: -0%;
+}
+
+#slide22:checked~.s1 {
+    margin-left: -33.3%;
+}
+
+#slide33:checked~.s1 {
+    margin-left: -65.7%;
+}
+
+#slide111:checked~.s1 {
+    margin-left: -0%;
+}
+
+#slide222:checked~.s1 {
+    margin-left: -33.3%;
+}
+
+#slide333:checked~.s1 {
+    margin-left: -65.7%;
+}
+
+#slide1111:checked~.s1 {
+    margin-left: -0%;
+}
+
+#slide2222:checked~.s1 {
+    margin-left: -33.3%;
+}
+
+#slide3333:checked~.s1 {
+    margin-left: -65.7%;
+}
+
+.bolinhas {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+
+
+
+}
+
+.bolinhas1 {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.bolinha {
+    border: 2px solid #00D448;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 2px;
+
+
+}
+
+.bolinha:hover {
+    background-color: #00D448;
+
+}
+
+footer {
+    margin-bottom: 0;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: justify;
+    display: inline-flex;
+    background-color: #000000;
+    flex-direction: column;
+}
+
+footer p {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+    margin-left: 08px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+footer p a {
+    color: #00D448;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-decoration-line: underline;
+
+
+
+}
+
+footer h4 a {
+    color: white;
+    text-decoration: none;
+}
+
+footer h3 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-top: -40px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+
+}
+
+#sup {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin-top: 10px;
+    margin-left: 08px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width:0px) and (max-width:900px) {
+    .pesquisar input {
+        display: none;
+    }
+
+    .item {
+        margin-left: -20px;
+    }
+
+    /* #slide1:checked ~ .s1{
+        margin-left:calc(220px * 11);
+    }
+    #slide2:checked ~ .s1{
+        margin-left:-33.3%;
+    }
+    #slide3:checked ~ .s1{
+        margin-left:-65.9%;
+    } */
+
+    .card1,
+    .card {
+        transition: margin-right 0.3s ease;
+    }
+
+    .card1+.card1,
+    .card+.card {
+        margin-left: -40px;
+        box-shadow: -10px 0px 14px #000000;
+        border-radius: 40px;
+        overflow: hidden;
+
+
+    }
+
+    .card1:hover,
+    .card1:focus,
+    .card:hover,
+    .card:focus {
+        z-index: 1;
+        margin-right: 40px;
+
+    }
+}

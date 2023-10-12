@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+main {
+    background-color: #101010;
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #1a1d1f;
+    height: 100%;
+}
+
+.main {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.header {
+    width: 100%;
+    background-color: #000;
+    height: 150px;
+}
+
+.header h1 {
+    color: white;
+    opacity: 70%;
+    font-family: 'Kumbh Sans', sans-serif;
+    padding-top: 45px;
+    text-align: center;
+    bottom: 920px;
+    font-size: 50px;
+
+}
+
+.profiles {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #101010;
+    padding: 80px;
+    align-items: center;
+
+}
+
+.profile {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 16px;
+    transition: 0.5s;
+}
+
+.profile__image {
+    width: 220px;
+    height: 220px;
+    border: none;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.profile__name {
+    font-family: 'Krona One', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+}
+
+.profile:hover {
+    transform: scale(1.3);
+}
+
+.linhaverde {
+    border-color: #00D448;
+    width: 100%;
+    height: 2px;
+    background-color: #00D448;
+
+}
+
+.linhaverde:last-of-type {
+    margin-top: auto;
+
+}
+
+.espace {
+    height: 18.79vh;
+}
+
+.footer {
+    width: 100%;
+    height: 160px;
+    background-color: #000;
+}
