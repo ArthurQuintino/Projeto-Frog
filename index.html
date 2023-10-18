@@ -21,11 +21,11 @@
                 <h2>Entrar</h2>
                 <form action="/perfil.html" method="get">
                     <div class="input_box">
-                        <input required type="email" placeholder="Email ou número de telefone">
+                        <input required type="email" placeholder="Email ou número de telefone" id="usuario">
                     </div>
 
                     <div class="input_box">
-                        <input required type="password" placeholder="Senha">
+                        <input required type="password" placeholder="Senha" id="senha">
                     </div>
 
                     <div>
@@ -33,7 +33,7 @@
                             ENTRAR
                         </button>
 
-                        <button class="submitaccount">
+                        <button class="submitaccount" id="criar__conta">
                             CRIAR CONTA
                         </button>
                     </div>
@@ -48,6 +48,36 @@
                 </div>
             </div>
         </div>
+        <script>
+            //função para validar o login
+
+            /*criando a função validar */
+            function validar() {
+            /* declarando as variáveis*/
+            let usuario = document.getElementById('usuario').value;
+            let senha = document.getElementById('senha').value;
+
+            /*fazendo  if e else para validar os campos */
+            if (usuario == 'Admin' && senha == '123456') {
+                //chama a tela do index
+                window.open('/perfil.html');
+                //fecha a tela login
+                window.close('/index.html');
+            } else {
+                alert('usuarío ou senha inválidos');
+            }
+            }
+
+                const button = document.getElementById("criar__conta");
+
+                button.addEventListener("click", function()
+                {
+                    window.location.href="conta.html";
+                })
+
+            
+
+        </script>
         <div class="name">
             <h1 id="nome">
                 FROG TV

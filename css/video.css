@@ -142,71 +142,85 @@ nav ul li {
 
 }
 
-#sinopse {
+.synopsis{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.synopsis__title{
     font-size: 30px;
-    margin-bottom: -80px;
-    margin-top: 40px;
-    margin-left: 40px;
+    margin: 0;
     color: #FFF;
     font-family: Kumbh Sans;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    
 
 }
-
-.sinopse {
-    width: 900px;
-    height: 400px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    margin-top: 100px;
-    margin-left: 20px;
+.synopsis__text{
     background-color: rgba(0, 0, 0, 0.62);
-    display: flex;
+    color: #FFF;
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px;
+    border-radius: 20px;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin:0;
+    font-size: 20px;
 }
 
-.linhaverde {
+
+.line{
     background-color: #00D448;
     width: 100%;
     height: 2px;
-    display: flex;
+    border: 0 none transparent;
 }
 
-.linhaverde1 {
-    background-color: #00D448;
-    width: 940px;
-    height: 2px;
-    display: flex;
-}
 
 .playervideo1 {
-    margin-top: 100px;
-    margin-left: 20px;
-    width: fit-content;
+
+ 
+    
 
 }
 
-video {
-    width: 900px;
-    height: 450px;
-    margin-bottom: 20px;
+video{
+    width: 100%;
+    height: auto;
     border-radius: 30px;
     z-index: 2;
 
 
 }
-
-#Conteudo {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+video source{
+    width: 100%;
+    height: 100%;
 }
 
-.sugestoes {
-    margin-left: 100px;
-    margin-top: 100px;
+.layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    
+}
 
+.layout__content{
+    grid-column: 1 ;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
 }
 
 .card img {
@@ -304,12 +318,49 @@ footer h3 {
     line-height: normal;
     text-decoration: none;
 }
+@media screen and (min-width: 720px){
+    .cards {
+        display: grid;
+        grid-template-rows: 250px 250px;
+        grid-template-columns: 250px 250px 250px;
+
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .layout{
+        display: grid;
+        grid-template-columns: 940px 250px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        grid-auto-flow: row dense;
+        gap: 100px;
+    }
+    .cards{
+        display: flex;
+    }
+    .layout__content{
+        grid-column: 1 ;
+
+    }
+    .layout__suggestions{
+        grid-column: 2 ;
+        
+    }
+    video{
+
+    }
+    .playervideo1{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+}
 
 
-
-
-
-@media screen and (min-width:0px) and (max-width:1300px) {
+/* @media screen and (min-width:0px) and (max-width:1300px) {
     #Conteudo{
         display: flex;
         align-items: center;
@@ -345,4 +396,4 @@ footer h3 {
     .space {
         height: 0vh;
     }
-}
+} */

@@ -299,7 +299,7 @@ footer h3 {
 
 }
 
-@media screen and (min-width:0px) and (max-width:1400px) {
+@media screen and (min-width:600px) and (max-width:1400px) {
     .texto {
         position: relative;
         left: 0;
@@ -338,4 +338,59 @@ footer h3 {
         height: 20vh;
     }
 
+}
+
+@media screen and (min-width:0px) and (max-width:600px) {
+    .texto {
+        position: relative;
+        left: 0;
+        margin-left: 30px;
+
+
+    }
+
+    .imagemfundo {
+        display: none;
+
+
+    }
+
+    #text {
+        font-family: 'NATS', sans-serif;
+        font-size: 40px;
+        color: white;
+    }
+
+    #text1 {
+        margin-top: -50px;
+        font-family: 'NATS', sans-serif;
+        color: #00D448;
+        font-size: 40px;
+    }
+
+    #text2 {
+        font-family: 'NATS', sans-serif;
+        color: #00D448;
+        font-size: 40px;
+        margin-top: -50px;
+    }
+
+    .espace {
+        height: 20vh;
+    }
+
+    .suporte_body h2{
+        font-size: 40px;
+    }
+
+    .suporte_body{
+        margin-left: 20px;
+    }
+    footer h3{
+        margin-top: -51px;
+    }
+
+    footer p{
+        margin-top: 40px;
+    }
 }

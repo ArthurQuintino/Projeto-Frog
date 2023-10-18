@@ -51,12 +51,15 @@ ul li a {
 }
 
 #SlideShowww{
-    width: 100%;
-    height: 800px;
+    width: 96%;
+    height: 900px;
+    margin-left: 2%;
+    margin-top: 80px;
     position: inherit;
-
-    
+    border-radius: 10px;
+    object-fit:cover;
 }
+
 
 #slides__showwww{
     height: 800px;
@@ -176,7 +179,6 @@ nav ul li {
     font-family: NATS;
     text-decoration: none;
     text-align: center;
-    margin-top: 30px;
     line-height: normal;
     font-style: normal;
     font-weight: 400;

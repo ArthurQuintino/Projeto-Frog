@@ -54,35 +54,7 @@
             <img id="SlideShowww" alt="" />
         </section>
 
-        <script>
-            // criando o slideshow da página home
-
-            // imagens dentro de um array
-            const imagens = [
-                '/img/serie1.jpg',
-                '/img/sugestão2.jpg',
-                '/img/sugestao3.jpg',
-            ];
-            //declarando a posição de inicio
-            let index = 0;
-            //declarando o tempo que as imagens vão passar em milisegundos
-            const SLIDE_SHOW_TIME_IN_MILLISECONDS = 3_000;
-
-            //criando a função chamada slideshow
-            function slideShow() {
-                // pegando a imagem no HTML pelo id e carregando as imagens
-                window.document.getElementById('SlideShowww').src = imagens[index];
-                // incrementando as imagens ex. se inicia na posição 0, depois 1, 2 e assim por diante
-                index++;
-                // se a posição da imagem for imagem a quantidade de imagens no array
-                if (index === imagens.length) {
-                    index = 0;
-                }
-                // setTimeout é uma função em javascript que executa o tempo nesse caso chama função e inicia o tempo
-                window.setTimeout(slideShow, SLIDE_SHOW_TIME_IN_MILLISECONDS);
-            }
-            //executa toda a função slideShow
-            slideShow();
+        <script src="./js/slide_show.js">
 
         </script>
 
@@ -98,8 +70,7 @@
                         <input type="radio" name="slide" id="slide3">
                             <!--Cards do Slide-->
                         <div class="slide s1">
-                            <div class="card1" data-name="agretsuko"> <a href="principal.html"><img
-                                        src="img/destaque1.png" /></a></div>
+                            <div class="card1" data-name="agretsuko"> <a href="principal.html"><img src="img/destaque1.png" /></a></div>
 
                             <div class="card1" data-name="hellsing"> <a href="principal.html"><img src="img/destaque2.png" /></a></div>
 
@@ -171,8 +142,6 @@
                             <div class="card" data-name="velozes e furiosos tokyo"> <a href="video1.html"><img src="img/filme11.png" /></a></div>
 
                             <div class="card" data-name="casa mostro"> <a href="video1.html"><img src="img/filme12.png" /></a></div>
-
-
 
 
                         </div>
@@ -293,33 +262,7 @@
             <h3>©Copyright 2023 - Todos os direitos reservados</h3>
         </footer>
     </div>
-    <script>
-            /*Identificadores de todos A de cards para adicionar um evento de click*/
-        window.document.querySelectorAll(".card1 a, .card a").forEach((link) => {
-            link.addEventListener("click", (event) => {
-            })
-        })
-    
-        const SEARCH_SELECTOR = ".pesquisar input"
-        const CARDS_SELECTOR = ".card1, .card"
-        const cards = window.document.querySelectorAll(CARDS_SELECTOR)
-
-         /*Metodo de Pesquisar por meio do Id do Card*/
-        window.document.querySelector(SEARCH_SELECTOR).addEventListener("input", (event) => {
-
-            Array.from(cards).forEach((card) => {
-                if((card.dataset.name??"").includes(event.target.value))
-                card.style.display = "block"
-                else
-                card.style.display = "none"
-            }
-            )
-            
-
-        }
-        )
-
-    </script>
+    <script src="./js/search.js"></script>
 </body>
 
 </html>
