@@ -97,14 +97,6 @@ ul li a {
     z-index: 2;
 }
 
-#animes {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    z-index: 2;
-}
-
 .slides input {
     display: none;
 }
@@ -316,87 +308,114 @@ nav ul li {
     height: 100%;
 }
 
-#slide1:checked~.s1 {
-    margin-left: -0%;
+/* CSS da seção de animes */
+
+.animes {
+    box-sizing: border-box;
+    padding: 0 36px;
 }
 
-#slide2:checked~.s1 {
-    margin-left: -33.3%;
+.animes__title {
+    margin: 0;
+    line-height: normal;
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: left;
+    color: white;
 }
 
-#slide3:checked~.s1 {
-    margin-left: -65.9%;
+.animes__carousel {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 320px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #303030;
+    padding: 10px;
 }
 
-#slide11:checked~.s1 {
-    margin-left: -0%;
+.animes__carousel .carousel {
+    border-radius: 12px;
 }
 
-#slide22:checked~.s1 {
-    margin-left: -33.3%;
+/* CSS do carrossel */
+
+.carousel {
+    position: relative; /* Por causa dos botões absolutos */
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
-#slide33:checked~.s1 {
-    margin-left: -65.7%;
+.carousel__next,
+.carousel__previous {
+  position: absolute;
+  top: 50%;
+  appearance: none;
+  overflow: hidden;
+  background-color: #303030;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 0 none transparent;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease;
+  will-change: transform;
+  z-index: 1;
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #00D448;
+  cursor: pointer;
 }
 
-#slide111:checked~.s1 {
-    margin-left: -0%;
+.carousel__next:active {
+  transform: translateX(10px) translateY(-50%);
 }
 
-#slide222:checked~.s1 {
-    margin-left: -33.3%;
+.carousel__previous:active {
+  transform: translateX(-10px) translateY(-50%);
 }
 
-#slide333:checked~.s1 {
-    margin-left: -65.7%;
+.carousel__next {
+  right: 0;
+  border-radius: 50% 0 0 50%;
 }
 
-#slide1111:checked~.s1 {
-    margin-left: -0%;
+.carousel__previous {
+  left: 0;
+  border-radius: 0 50% 50% 0;
 }
 
-#slide2222:checked~.s1 {
-    margin-left: -33.3%;
-}
-
-#slide3333:checked~.s1 {
-    margin-left: -65.7%;
-}
-
-.bolinhas {
+.carousel__slides {
     display: flex;
-    margin-top: 30px;
-    align-items: center;
-
-
-
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    width: fit-content;
+    transition: transform 0.2s ease-in;
+    will-change: transform;
 }
 
-.bolinhas1 {
-    display: flex;
-    margin-top: 30px;
-    align-items: center;
-    margin-bottom: 30px;
+/* CSS do card */
 
+.card {}
+
+.card__link,
+.card__image {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
-.bolinha {
-    border: 2px solid #00D448;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
-    margin: 2px;
-
-
-}
-
-.bolinha:hover {
-    background-color: #00D448;
-
+.card__image {
+    object-fit: cover;
+    object-position: center;
 }
 
 footer {

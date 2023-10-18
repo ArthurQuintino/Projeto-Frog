@@ -54,9 +54,7 @@
             <img id="SlideShowww" alt="" />
         </section>
 
-        <script src="./js/slide_show.js">
-
-        </script>
+        <script src="./js/slide_show.js"></script>
 
         <section id="destaques">
             <h1 id="titulo1">DESTAQUES DA SEMANA</h1>
@@ -203,52 +201,89 @@
             </section>
 
         </section>
-        <h1 id="titulo3">Animes</h1>
-        <section id="animes">
-            <div class="carosel2">
-                <div class="caroselslide">
+        <section id="animes" class="animes">
+            <h1 class="animes__title">Animes</h1>
+            <div class="animes__carousel">
+                <div class="carousel js-carousel-of-animes">
+                    <button class="carousel__previous js-carousel-button-previous" type="button">&lt;</button>
 
-                    <div class="slides">
-                        <input type="radio" name="slide" id="slide1111" checked>
-                        <input type="radio" name="slide" id="slide2222">
-                        <input type="radio" name="slide" id="slide3333">
+                    <div class="carousel__slides js-carousel-slides">
+                        <div class="card" data-name="paprika">
+                            <a class="card__link" href="video3.html">
+                                <img class="card__image" src="img/anime1.jpg" />
+                            </a>
+                        </div>
 
-                        <div class="slide s1">
-                            <div class="card"  data-name="paprika"> <a href="video3.html"><img src="img/anime1.jpg" /></a></div>
+                        <div class="card" data-name="mob psycho 100">
+                            <a class="card__link" href="video3.html">
+                                <img class="card__image" src="img/anime2.jpg" />
+                            </a>
+                        </div>
 
-                            <div class="card"  data-name="mob psycho 100"> <a href="video3.html"><img src="img/anime2.jpg" /></a></div>
+                        <div class="card" data-name="moshocu tensei">
+                            <a class="card__link" href="video3.html">
+                                <img class="card__image" src="img/anime3.png" />
+                            </a>
+                        </div>
 
-                            <div class="card"  data-name="moshocu tensei"> <a href="video3.html"><img src="img/anime3.png" /></a></div>
+                        <div class="card" data-name="one punch man">
+                            <a class="card__link" href="video3.html">
+                                <img class="card__image" src="img/anime4.png" />
+                            </a>
+                        </div>
 
-                            <div class="card"  data-name="one punch man"> <a href="video3.html"><img src="img/anime4.png" /></a></div>
+                        <div class="card" data-name="devilman crybaby">
+                            <a class="card__link" href="video3.html">
+                                <img class="card__image" src="img/anime5.png" />
+                            </a>
+                        </div>
 
-                            <div class="card"  data-name="devilman crybaby"><a href="video3.html"><img src="img/anime5.png" /></a></div>
+                        <div class="card" data-name="dororo">
+                            <a class="card__link" href="video3.html">
+                                <img class="card__image" src="img/anime6.png" />
+                            </a>
+                        </div>
 
-                            <div class="card"  data-name="dororo"> <a href="video3.html"><img src="img/anime6.png" /></a></div>
+                        <div class="card" data-name="naruto"> 
+                            <a class="card__link" href="video3.html">
+                                <img class="card__image" src="img/anime7.png" />
+                            </a>
+                        </div>
 
-                            <div class="card"  data-name="naruto"> <a href="video3.html"><img src="img/anime7.png" /></a></div>
+                        <div class="card" data-name="baki hanma">
+                            <a class="card__link" href="video3.html">
+                                <img class="card__image" src="img/anime8.png" />
+                            </a>
+                        </div>
 
-                            <div class="card"  data-name="baki hanma"> <a href="video3.html"><img src="img/anime8.png" /></a></div>
+                        <div class="card" data-name="great pretender">
+                            <a class="card__link" href="video3.html">
+                                <img class="card__image" src="img/anime9.png" />
+                            </a>
+                        </div>
 
-                            <div class="card"  data-name="great pretender"> <a href="video3.html"><img src="img/anime9.png" /></a></div>
+                        <div class="card" data-name="samurai champloo"> 
+                            <a class="card__link" href="video3.html">
+                                <img class="card__image" src="img/anime10.png" />
+                            </a>
+                        </div>
 
-                            <div class="card"  data-name="samurai champloo"> <a href="video3.html"><img src="img/anime10.png" /></a></div>
+                        <div class="card" data-name="kotaro lives alone"> 
+                            <a class="card__link" href="video3.html">
+                                <img class="card__image" src="img/anime11.jpg" />
+                            </a>
+                        </div>
 
-                            <div class="card"  data-name="kotaro lives alone"> <a href="video3.html"><img src="img/anime11.jpg" /></a></div>
-
-                            <div class="card"  data-name="dohedoro"> <a href="video3.html"><img src="img/anime12.png" /></a></div>
+                        <div class="card" data-name="dohedoro"> 
+                            <a class="card__link" href="video3.html">
+                                <img class="card__image" src="img/anime12.png" />
+                            </a>
                         </div>
                     </div>
+
+                    <button class="carousel__next js-carousel-button-next" type="button">&gt;</button>
                 </div>
             </div>
-            <section id="bolinha2">
-                <div class="bolinhas1">
-                    <label class="bolinha" for="slide1111"></label>
-                    <label class="bolinha" for="slide2222"></label>
-                    <label class="bolinha" for="slide3333"></label>
-                </div>
-            </section>
-
         </section>
 
         <main></main>
@@ -263,6 +298,7 @@
         </footer>
     </div>
     <script src="./js/search.js"></script>
+    <script src="./js/carousels.js"></script>
 </body>
 
 </html>
