@@ -22,7 +22,7 @@
                 <h2>Entrar</h2>
                 <form action="/perfil.html" method="get">
                     <div class="input_box">
-                        <input required type="email" placeholder="Email ou número de telefone" id="usuario">
+                        <input required type="text" placeholder="Email ou número de telefone" id="usuario">
                     </div>
 
                     <div class="input_box">
@@ -30,7 +30,7 @@
                     </div>
 
                     <div>
-                        <button type="submit" class="submit">
+                        <button type="submit" class="submit" id="entrar">
                             ENTRAR
                         </button>
 
@@ -54,29 +54,33 @@
 
             /*criando a função validar */
             function validar() {
-            /* declarando as variáveis*/
-            let usuario = document.getElementById('usuario').value;
-            let senha = document.getElementById('senha').value;
+                /* declarando as variáveis*/
+                let usuario = document.getElementById('usuario').value;
+                let senha = document.getElementById('senha').value;
 
-            /*fazendo  if e else para validar os campos */
-            if (usuario == 'Admin' && senha == '123456') {
-                //chama a tela do index
-                window.open('/perfil.html');
-                //fecha a tela login
-                window.close('/index.html');
-            } else {
-                alert('usuarío ou senha inválidos');
+                /*fazendo  if e else para validar os campos */
+                if (usuario == 'Admin' && senha == '123456') {
+                    //chama a tela do index
+                    window.location.href = ('/perfil.html');
+
+                } else {
+                    alert('usuarío ou senha inválidos');
+                }
             }
-            }
 
-                const button = document.getElementById("criar__conta");
+            const button = document.getElementById("criar__conta");
 
-                button.addEventListener("click", function()
-                {
-                    window.location.href="conta.html";
-                })
+            button.addEventListener("click", function () {
+                window.location.href = "conta.html";
+            })
 
-            
+            const form = document.querySelector("form")
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+                validar();
+            })
+
 
         </script>
         <div class="name">
