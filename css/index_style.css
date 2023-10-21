@@ -270,6 +270,7 @@ body::before {
 
     .footer {
         z-index: 1;
+        height: 85px;
 
     }
 

@@ -113,3 +113,16 @@ body {
     height: 160px;
     background-color: #000;
 }
+
+@media screen and (max-width:450px) {
+    .header h1 {
+        color: white;
+        opacity: 70%;
+        font-family: 'Kumbh Sans', sans-serif;
+        padding-top: 45px;
+        text-align: center;
+        font-size: 40px;
+        
+    }
+}
+    

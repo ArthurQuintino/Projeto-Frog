@@ -2,9 +2,12 @@
 
 // imagens dentro de um array
 const imagens = [
-    '/img/banner-velozes-e-furiosos-9.jpg',
-    // '/img/sugestão2.jpg',
-    // '/img/sugestao3.jpg',
+    '/img/slide1.jpg',
+    '/img/slide2.jpg',
+    '/img/slide3.jpg',
+    '/img/slide4.jpg',
+    '/img/slide5.jpg',
+    '/img/slide6.png',
 ];
 //declarando a posição de inicio
 let index = 0;

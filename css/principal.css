@@ -52,7 +52,7 @@ ul li a {
 
 #SlideShowww{
     width: 96%;
-    height: 900px;
+    height: 640px;
     margin-left: 2%;
     margin-top: 80px;
     position: inherit;
@@ -67,35 +67,7 @@ ul li a {
    
 }
 
-#destaques {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 2;
 
-
-
-
-
-}
-
-#filmes {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    z-index: 2;
-
-}
-
-#series {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    z-index: 2;
-}
 
 .slides input {
     display: none;
@@ -178,47 +150,6 @@ nav ul li {
 
 }
 
-#titulo2 {
-    color: white;
-    font-family: Kumbh Sans;
-    text-decoration: none;
-    text-align: left;
-    line-height: normal;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    left: 0px;
-    margin-bottom: 10px;
-    margin-left: 37px;
-}
-
-#titulo3 {
-    color: white;
-    font-family: Kumbh Sans;
-    text-decoration: none;
-    text-align: left;
-    line-height: normal;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    left: 0px;
-    margin-bottom: 10px;
-    margin-left: 37px;
-}
-
-#titulo4 {
-    color: white;
-    font-family: Kumbh Sans;
-    text-decoration: none;
-    text-align: left;
-    line-height: normal;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    left: 0px;
-    margin-bottom: 10px;
-    margin-left: 37px;
-}
 
 .linhaverde {
     background-color: #00D448;
@@ -233,9 +164,9 @@ nav ul li {
     background-color: #000000;
 }
 
-.caroselslide {
+.caroselslide1 {
     height: 400px;
-    width: 99%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -312,8 +243,18 @@ nav ul li {
 
 .animes {
     box-sizing: border-box;
-    padding: 0 36px;
+    padding: 20px 36px 50px;
+    
 }
+.series{
+    box-sizing: border-box;
+    padding: 20px 36px;
+}
+.films{
+    box-sizing: border-box;
+    padding: 20px 36px;
+}
+
 
 .animes__title {
     margin: 0;
@@ -326,7 +267,42 @@ nav ul li {
     text-align: left;
     color: white;
 }
+.animes__title {
+    margin: 0;
+    line-height: normal;
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+}
 
+.series__title{
+    
+    margin: 0;
+    line-height: normal;
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+}
+
+.films__title{
+    margin: 0;
+    line-height: normal;
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+}
 .animes__carousel {
     box-sizing: border-box;
     overflow: hidden;
@@ -336,8 +312,40 @@ nav ul li {
     background-color: #303030;
     padding: 10px;
 }
+.series__carousel{
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 320px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #303030;
+    padding: 10px;
+}
+.films__carousel{
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 320px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #303030;
+    padding: 10px;
+}
+.videos__destaques{
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    background-color: #000;
+    padding: 18px;
 
+}
 .animes__carousel .carousel {
+    border-radius: 12px;
+}
+.series__carousel .carousel{
+    border-radius: 12px;
+}
+.films__carousel .carousel{
     border-radius: 12px;
 }
 
@@ -400,6 +408,18 @@ nav ul li {
     width: fit-content;
     transition: transform 0.2s ease-in;
     will-change: transform;
+}
+.carousel__slides1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    width: fit-content;
+    transition: transform 0.2s ease-in;
+    will-change: transform;
+
 }
 
 /* CSS do card */
@@ -526,4 +546,10 @@ footer h3 {
         margin-right: 40px;
 
     }
+    #SlideShowww{
+        height: 350px;
+    }
 }
+
+
+    

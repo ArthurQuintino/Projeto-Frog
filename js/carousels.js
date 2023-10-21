@@ -75,4 +75,9 @@ function initializeCarousel(wrapperSelector) {
 }
 
 initializeCarousel('.js-carousel-of-animes');
+initializeCarousel('.js-carousel-of-series');
+initializeCarousel('.js-carousel-of-films');
+initializeCarousel('.js-carousel-of-destaques');
+
+
 

@@ -44,20 +44,22 @@
             <link href="https://fonts.cdnfonts.com/css/nats" rel="stylesheet">
         </nav>
 
-
-
         <!--div que Tem todo o conteudo do site-->
-        <div id="Conteudo">
+        <div id="Conteudo" class="layout">
             <!--div que Tem o conteudo do video e a sinopse-->
-            <div id="Conteudo1">
-                <h1 id="titulo1">Naruto [Livre]</h1>
-                <div class="playervideo1"> <video name="video1" controls>
-                        <source id="video1" src="video/anime.mp4">
-                    </video></div>
-                <div class="linhaverde1"></div>
-                <h1 id="sinopse">Sinopse</h1>
-                <div class="sinopse">
-                    <p>"Naruto" é um anime e mangá sobre a jornada de Naruto Uzumaki, um jovem ninja rejeitado por ser o
+            <div id="Conteudo1" class="layout__content">
+                <div class="video">
+                    <h1 id="video" class="video__title">Naruto [Livre]</h1>
+                    <video controls class="video__player">
+                        <source src="video/anime.mp4">
+                    </video>
+                </div>
+
+                <hr class="line">
+
+                <article class="synopsis">
+                    <h1 id="sinopse" class="synopsis__title">Sinopse</h1>
+                    <p class="synopsis__text">"Naruto" é um anime e mangá sobre a jornada de Naruto Uzumaki, um jovem ninja rejeitado por ser o
                         recipiente de uma ameaçadora besta de nove caudas. Determinado a se tornar o líder de sua vila,
                         Naruto
                         embarca em uma jornada de autodescoberta e crescimento pessoal, fazendo amigos leais e
@@ -66,10 +68,10 @@
                         determinação em um mundo ninja cheio de ação e habilidades especiais. A história continua em
                         "Naruto:
                         Shippuden", onde Naruto enfrenta desafios ainda maiores.</p>
-                </div>
+                </article>
             </div>
             <!--Aba sugestoes juntos com os cards-->
-            <aside class="sugestoes">
+            <aside class="sugestoes layout__suggestions">
                 <h1 id="titulo2">Sugestões para Você</h1>
                 <div class="cards">
                     <div class="card"> <a href="principal.html">
@@ -98,7 +100,7 @@
     <footer class="footer">
         <p class="footer__text">Nossos <a href="https://policies.google.com/terms" target="blank" class="footer__link">Termos de Serviços</a>.</p>
 
-        <p class="footer__copyright">&copy;Copyright 2023 - Todos os direitos reservados</p>
+        <p class="footer__copyright">&copy;Copyright 2023 - Todos os direitos reservados -- Orientado por Wellington Cidade</p>
         
         <a href="suporte.html" class="footer__support">Suporte</a>
 

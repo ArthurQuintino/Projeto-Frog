@@ -20,13 +20,13 @@
             </div>
             <ul>
                 <li>
-                    <a class="item" href="#films">Filmes</a>
+                    <a class="item" href="#filmes">Filmes</a>
                 </li>
                 <li>
-                    <a class="item" href="#séries">Séries</a>
+                    <a class="item" href="#series">Séries</a>
                 </li>
                 <li>
-                    <a class="item" href="#animess">Animes</a>
+                    <a class="item" href="#animes">Animes</a>
                 </li>
             </ul>
 
@@ -56,150 +56,112 @@
 
         <script src="./js/slide_show.js"></script>
 
-        <section id="destaques">
-            <h1 id="titulo1">DESTAQUES DA SEMANA</h1>
+        <section id="destaques" >
+            <h1 id="titulo1" class="titulo1">DESTAQUES DA SEMANA</h1>
             <div class="linhaverde"></div>
-            <div class="container1">
-                <div class="caroselslide">
-                        <!--Slides-->
-                    <div class="slides">
-                        <input type="radio" name="slide" id="slide1" checked>
-                        <input type="radio" name="slide" id="slide2">
-                        <input type="radio" name="slide" id="slide3">
-                            <!--Cards do Slide-->
-                        <div class="slide s1">
-                            <div class="card1" data-name="agretsuko"> <a href="principal.html"><img src="img/destaque1.png" /></a></div>
+                <div class="videos__destaques">
+                    <div class="carousel js-carousel-of-destaques">
+                            <button class="carousel__previous js-carousel-button-previous" type="button">&lt;</button>
+                        <div class="carousel__slides1 js-carousel-slides">
+                            <div class="card1" data-name="agretsuko"> <a class="card__link" href="principal.html"><img class="card__image"  src="img/destaque1.png" /></a></div>
 
-                            <div class="card1" data-name="hellsing"> <a href="principal.html"><img src="img/destaque2.png" /></a></div>
+                            <div class="card1" data-name="hellsing"> <a class="card__link" href="principal.html"><img class="card__image"  src="img/destaque2.png" /></a></div>
 
-                            <div class="card1" data-name="dragonball"> <a href="principal.html"><img src="img/destaque3.png" /></a></div>
+                            <div class="card1" data-name="dragonball"> <a class="card__link" href="principal.html"><img class="card__image"  src="img/destaque3.png" /></a></div>
 
-                            <div class="card1" data-name="death note"> <a href="principal.html"><img src="img/destaque4.jpg" /></a></div>
+                            <div class="card1" data-name="death note"> <a class="card__link" href="principal.html"><img class="card__image"  src="img/destaque4.jpg" /></a></div>
 
-                            <div class="card1" data-name="one piece"><a href="principal.html"><img src="img/destaque5.png" /></a></div>
+                            <div class="card1" data-name="one piece"><a class="card__link" href="principal.html"><img class="card__image"  src="img/destaque5.png" /></a></div>
 
-                            <div class="card1" data-name="fullmetal alchemist"> <a href="principal.html"><img src="img/destaque6.jpg" /></a></div>
+                            <div class="card1" data-name="fullmetal alchemist"> <a class="card__link" href="principal.html"><img class="card__image"  src="img/destaque6.jpg" /></a></div>
 
-                            <div class="card1" data-name="cobra kai"> <a href="principal.html"><img src="img/destaques7.jpeg" /></a></div>
+                            <div class="card1" data-name="cobra kai"> <a class="card__link" href="principal.html"><img class="card__image"  src="img/destaques7.jpeg" /></a></div>
 
-                            <div class="card1" data-name="o poderoso chefao"> <a href="principal.html"><img src="img/destaque8.jpeg" /></a></div>
+                            <div class="card1" data-name="o poderoso chefao"> <a class="card__link" href="principal.html"><img class="card__image"  src="img/destaque8.jpeg" /></a></div>
 
-                            <div class="card1" data-name="matrix"> <a href="principal.html"><img src="img/destaque9.jpeg" /></a></div>
+                            <div class="card1" data-name="matrix"> <a class="card__link" href="principal.html"><img class="card__image"  src="img/destaque9.jpeg" /></a></div>
 
-                            <div class="card1" data-name="game of thrones"> <a href="principal.html"><img src="img/destaque10.jpeg" /></a></div>
+                            <div class="card1" data-name="game of thrones"> <a class="card__link" href="principal.html"><img class="card__image"  src="img/destaque10.jpeg" /></a></div>
 
-                            <div class="card1" data-name="evangelion"> <a href="principal.html"><img src="img/destaque11.jpeg" /></a></div>
+                            <div class="card1" data-name="evangelion"> <a class="card__link" href="principal.html"><img class="card__image"  src="img/destaque11.jpeg" /></a></div>
 
-                            <div class="card1" data-name="cowboy bepop"> <a href="principal.html"><img src="img/destaque12.jpeg" /></a></div>
+                            <div class="card1" data-name="cowboy bepop"> <a class="card__link" href="principal.html"><img class="card__image"  src="img/destaque12.jpeg" /></a></div>
 
                         </div>
+                        <button class="carousel__next js-carousel-button-next" type="button">&gt;</button>
                     </div>
                 </div>
             </div>
             <div class="linhaverde"></div>
-            <section id="films">
-                <!--Bolinhas de Navegação-->
-                <div class="bolinhas">
-                    <label class="bolinha" for="slide1"></label>
-                    <label class="bolinha" for="slide2"></label>
-                    <label class="bolinha" for="slide3"></label>
-                </div>
-            </section>
         </section>
-        <h1 id="titulo2">Filmes </h1>
-        <section id="filmes">
-            <div class="carosel2">
-                <div class="caroselslide2">
+        <section id="filmes" class="films">
+            <h1 id="titulo2" class="films__title">Filmes </h1>
+            <div class="films__carousel">
+                <div class="carousel js-carousel-of-films">
+                        <button class="carousel__previous js-carousel-button-previous" type="button">&lt;</button>
+                    <div class="carousel__slides js-carousel-slides">
+                            <div class="card" data-name="forest gump"> <a class="card__link" href="video1.html"><img  class="card__image" src="img/filmes.png" /></a></div>
 
-                    <div class="slides">
-                        <input type="radio" name="slide" id="slide11" checked>
-                        <input type="radio" name="slide" id="slide22">
-                        <input type="radio" name="slide" id="slide33">
+                            <div class="card" data-name="onze homens e um segredo"> <a class="card__link" href="video1.html"><img  class="card__image" src="img/filme2.jpg" /></a></div>
 
-                        <div class="slide s1">
-                            <div class="card" data-name="forest gump"> <a href="video1.html"><img src="img/filmes.png" /></a></div>
+                            <div class="card" data-name="batman cavaleiro das trevas"> <a class="card__link" href="video1.html"><img  class="card__image" src="img/filme3.jpg" /></a></div>
 
-                            <div class="card" data-name="onze homens e um segredo"> <a href="video1.html"><img src="img/filme2.jpg" /></a></div>
+                            <div class="card" data-name="O profissional"> <a class="card__link" href="video1.html"><img  class="card__image" src="img/filme4.png" /></a></div>
 
-                            <div class="card" data-name="batman cavaleiro das trevas"> <a href="video1.html"><img src="img/filme3.jpg" /></a></div>
+                            <div class="card" data-name="john wick de volta ao jogo"><a class="card__link" href="video1.html"><img  class="card__image" src="img/filme5.png" /></a></div>
 
-                            <div class="card" data-name="O profissional"> <a href="video1.html"><img src="img/filme4.png" /></a></div>
+                            <div class="card" data-name="john wick um dia novo para matar"> <a class="card__link" href="video1.html"><img  class="card__image" src="img/filme6.png" /></a></div>
 
-                            <div class="card" data-name="john wick de volta ao jogo"><a href="video1.html"><img src="img/filme5.png" /></a></div>
+                            <div class="card" data-name="john wick Parabellum "> <a class="card__link" href="video1.html"><img  class="card__image" src="img/filme7.png" /></a></div>
 
-                            <div class="card" data-name="john wick um dia novo para matar"> <a href="video1.html"><img src="img/filme6.png" /></a></div>
+                            <div class="card" data-name="john wick 4"> <a class="card__link" href="video1.html"><img  class="card__image" src="img/filme8.png" /></a></div>
 
-                            <div class="card" data-name="john wick Parabellum "> <a href="video1.html"><img src="img/filme7.png" /></a></div>
+                            <div class="card" data-name="bastardos inglorios"> <a class="card__link" href="video1.html"><img  class="card__image" src="img/filme9.png" /></a></div>
 
-                            <div class="card" data-name="john wick 4"> <a href="video1.html"><img src="img/filme8.png" /></a></div>
+                            <div class="card" data-name="interstellar"> <a class="card__link" href="video1.html"><img  class="card__image" src="img/filme10.png" /></a></div>
 
-                            <div class="card" data-name="bastardos inglorios"> <a href="video1.html"><img src="img/filme9.png" /></a></div>
+                            <div class="card" data-name="velozes e furiosos tokyo"> <a class="card__link" href="video1.html"><img  class="card__image" src="img/filme11.png" /></a></div>
 
-                            <div class="card" data-name="interstellar"> <a href="video1.html"><img src="img/filme10.png" /></a></div>
+                            <div class="card" data-name="casa mostro"> <a href="video1.html"><img  class="card__image" src="img/filme12.png" /></a></div>
+                    </div>
+                    <button class="carousel__next js-carousel-button-next" type="button">&gt;</button>
+                </div>
+            </div>
+        </section>
+        <section id="series" class="series">
+            <h1 id="titulo3" class="series__title">Séries</h1>
+            <div class="series__carousel">
+                <div class="carousel js-carousel-of-series">
+                        <button class="carousel__previous js-carousel-button-previous" type="button">&lt;</button>
+                            <div class="carousel__slides js-carousel-slides">
+                                <div class="card" data-name="breaking bad"> <a class="card__link" href="video2.html"><img class="card__image" src="img/serie1.jpg" /></a></div>
 
-                            <div class="card" data-name="velozes e furiosos tokyo"> <a href="video1.html"><img src="img/filme11.png" /></a></div>
+                                <div class="card" data-name="peaky blinders"> <a class="card__link" href="video2.html"><img  class="card__image" src="img/serie2.png" /></a></div>
 
-                            <div class="card" data-name="casa mostro"> <a href="video1.html"><img src="img/filme12.png" /></a></div>
+                                <div class="card" data-name="lista negra"> <a class="card__link" href="video2.html"><img class="card__image" src="img/serie3.png" /></a></div>
 
+                                <div class="card" data-name="ncsi"> <a class="card__link" href="video2.html"><img class="card__image" src="img/serie4.png" /></a></div>
 
-                        </div>
+                                <div class="card" data-name="house"><a class="card__link" href="video2.html"><img class="card__image" src="img/serie5.png" /></a></div>
+
+                                <div class="card" data-name="suits"> <a class="card__link" href="video2.html"><img class="card__image" src="img/serie6.png" /></a></div>
+
+                                <div class="card" data-name="the office"> <a class="card__link" href="video2.html"><img class="card__image" src="img/serie7.png" /></a></div>
+
+                                <div class="card" data-name="rick and morty"> <a class="card__link" href="video2.html"><img class="card__image" src="img/serie8.png" /></a></div>
+
+                                <div class="card" data-name="star wars mandalorian"> <a class="card__link" href="video2.html"><img class="card__image" src="img/serie9.png" /></a></div>
+
+                                <div class="card" data-name="star wars clone wars"> <a class="card__link" href="video2.html"><img class="card__image" src="img/serie10.png" /></a></div>
+
+                                <div class="card" data-name="top gear"> <a class="card__link" href="video2.html"><img class="card__image" src="img/serie11.png" /></a></div>
+
+                                <div class="card" data-name="doctor who"> <a class="card__link" href="video2.html"><img class="card__image" src="img/serie12.png" /></a></div>
+                            </div>
+                        <button class="carousel__next js-carousel-button-next" type="button">&gt;</button>
                     </div>
                 </div>
             </div>
-            <section id="séries">
-                <div class="bolinhas1">
-                    <label class="bolinha" for="slide11"></label>
-                    <label class="bolinha" for="slide22"></label>
-                    <label class="bolinha" for="slide33"></label>
-                </div>
-            </section>
-        </section>
-        <h1 id="titulo3">Séries</h1>
-        <section id="series">
-            <div class="carosel2">
-                <div class="caroselslide">
-
-                    <div class="slides">
-                        <input type="radio" name="slide" id="slide111" checked>
-                        <input type="radio" name="slide" id="slide222">
-                        <input type="radio" name="slide" id="slide333">
-
-                        <div class="slide s1">
-                            <div class="card" data-name="breaking bad"> <a href="video2.html"><img src="img/serie1.jpg" /></a></div>
-
-                            <div class="card" data-name="peaky blinders"> <a href="video2.html"><img src="img/serie2.png" /></a></div>
-
-                            <div class="card" data-name="lista negra"> <a href="video2.html"><img src="img/serie3.png" /></a></div>
-
-                            <div class="card" data-name="ncsi"> <a href="video2.html"><img src="img/serie4.png" /></a></div>
-
-                            <div class="card" data-name="house"><a href="video2.html"><img src="img/serie5.png" /></a></div>
-
-                            <div class="card" data-name="suits"> <a href="video2.html"><img src="img/serie6.png" /></a></div>
-
-                            <div class="card" data-name="the office"> <a href="video2.html"><img src="img/serie7.png" /></a></div>
-
-                            <div class="card" data-name="rick and morty"> <a href="video2.html"><img src="img/serie8.png" /></a></div>
-
-                            <div class="card" data-name="star wars mandalorian"> <a href="video2.html"><img src="img/serie9.png" /></a></div>
-
-                            <div class="card" data-name="star wars clone wars"> <a href="video2.html"><img src="img/serie10.png" /></a></div>
-
-                            <div class="card" data-name="top gear"> <a href="video2.html"><img src="img/serie11.png" /></a></div>
-
-                            <div class="card" data-name="doctor who"> <a href="video2.html"><img src="img/serie12.png" /></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <section id="animess">
-                <div class="bolinhas1">
-                    <label class="bolinha" for="slide111"></label>
-                    <label class="bolinha" for="slide222"></label>
-                    <label class="bolinha" for="slide333"></label>
-                </div>
-            </section>
-
         </section>
         <section id="animes" class="animes">
             <h1 class="animes__title">Animes</h1>
@@ -291,7 +253,7 @@
         <footer class="footer">
             <p class="footer__text">Nossos <a href="https://policies.google.com/terms" target="blank" class="footer__link">Termos de Serviços</a>.</p>
     
-            <p class="footer__copyright">&copy;Copyright 2023 - Todos os direitos reservados</p>
+            <p class="footer__copyright">&copy;Copyright 2023 - Todos os direitos reservados -- Orientado por Wellington Cidade</p>
             
             <a href="suporte.html" class="footer__support">Suporte</a>
     

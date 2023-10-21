@@ -284,7 +284,9 @@ body::before {
         font-style: none;
         font-weight: normal;
     }
-
+    .footer{
+        height: 85px;
+    }
     .footer h3 {
         font-size: 15px;
         font-style: none;

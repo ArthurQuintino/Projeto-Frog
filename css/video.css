@@ -74,30 +74,15 @@ nav ul li {
 }
 
 .pesquisar {
-    position: fixed;
-    display: inline-flex;
-    flex-shrink: 0;
-    color: white;
-    text-decoration: none;
-    margin-top: -20px;
-    right: 60px;
+    display: none;
 }
 
 .pesquisar input {
-    background-color: #252222;
-    width: 130px;
-    height: 22px;
-    border-radius: 5px;
-    box-shadow: none;
-    text-decoration: none;
-    color: white;
-    outline: none;
-    border: none;
-    margin-left: 10px;
+    display: none;
 }
 
 .pesquisar img {
-    margin-top: 02px;
+    display: none;
 }
 
 .fotoperfil img {
@@ -205,7 +190,7 @@ nav ul li {
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
-    margin-top: calc(var(--navi-height) + 50px);
+    margin-top: calc(var(--navi-height) + 25px);
     gap: 20px;
 
 }
@@ -261,6 +246,7 @@ nav ul li {
         grid-template-columns: 250px 250px 250px;
 
     }
+    
 }
 
 
@@ -273,8 +259,10 @@ nav ul li {
         flex-direction: row;
         grid-auto-flow: row dense;
         gap: 100px;
+        
 
     }
+    
 
     .cards {
         display: flex;
