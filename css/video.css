@@ -55,6 +55,8 @@ ul li a {
 .item {
     text-decoration: none;
     color: white;
+    margin-left: -20px;
+
 }
 
 ul {
@@ -263,7 +265,9 @@ nav ul li {
 
     }
     
-
+    .item{
+        margin-left: 0px;
+    }
     .cards {
         display: flex;
     }
