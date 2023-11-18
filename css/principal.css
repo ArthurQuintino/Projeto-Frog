@@ -342,7 +342,7 @@ nav ul li {
     height: 400px;
     width: 100%;
     background-color: #000;
-    padding-top: 18px;
+    padding: 18px 0px 0px 0px;
 
 }
 .animes__carousel .carousel {
@@ -412,7 +412,7 @@ nav ul li {
     justify-content: flex-start;
     gap: 10px;
     width: fit-content;
-    transition: transform 0.2s ease-in;
+    transition: transform 0.4s ease-in-out;
     will-change: transform;
 }
 .carousel__slides1{
@@ -423,7 +423,7 @@ nav ul li {
     justify-content: flex-start;
     gap: 30px;
     width: fit-content;
-    transition: transform 0.2s ease-in;
+    transition: transform 0.4s ease-in-out;
     will-change: transform;
 
 }
