@@ -36,14 +36,14 @@ ul li a {
     margin-left: 15px;
 }
 
-.logo1 img {
+#logo img {
     width: 50px;
     height: 50px;
     margin-bottom: 100px;
 
 }
 
-.logo1 {
+#logo1 {
     width: 50px;
     height: 50px;
 
@@ -61,6 +61,7 @@ ul li a {
 .item {
     text-decoration: none;
     color: white;
+    margin-left: -15px;
 }
 
 ul {

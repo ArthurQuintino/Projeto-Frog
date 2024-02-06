@@ -34,14 +34,12 @@ ul li a {
     margin-left: 15px;
 }
 
-.logo1 img {
-    width: 20px;
-    height: 20px;
-    margin-bottom: 100px;
-
+#logo img {
+    width: 50px;
+    height: 50px;
 }
 
-.logo1 {
+#logo{
     width: 50px;
     height: 50px;
 
@@ -56,6 +54,7 @@ ul li a {
     text-decoration: none;
     color: white;
     margin-left: -20px;
+    
 
 }
 
@@ -266,7 +265,7 @@ nav ul li {
     }
     
     .item{
-        margin-left: 0px;
+        margin-left: -15px;
     }
     .cards {
         display: flex;
