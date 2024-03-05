@@ -47,7 +47,7 @@ body::before {
     background-color: rgb(0, 0, 0, 0.9);
     border-radius: 40px;
     box-sizing: border-box;
-    width: 450px;
+    width: 100%;
 
 }
 
@@ -260,6 +260,13 @@ body::before {
 }
 
 @media screen and (min-width:0px) and (max-width:960px) {
+    .main{
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        display: grid;
+    }
+    
     #nome {
         display: none;
     }
