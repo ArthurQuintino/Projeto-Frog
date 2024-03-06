@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
 
+:root {
+    --footer-height: 85px;
+    --footer-bottom: 10px;
+}
 
 body {
     padding: 0;
@@ -16,53 +20,92 @@ body {
     box-sizing: border-box;
 }
 
-
-body::before {
-    content: '';
-    background-color: rgb(0, 0, 0, );
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
+.main {
+    display: grid;
+    place-items: center;
+    row-gap: 40px;
+    margin-bottom: calc(var(--footer-bottom) + var(--footer-height));
 }
 
-
+@media screen and (min-width: 960px) {
+    .main {
+        display: block;
+        row-gap: 0;
+        margin-bottom: 0;
+    }
+}
 
 .header {
     padding: 20px 50px;
     position: relative;
-    z-index: 19
+    z-index: 19;
 }
 
-.login_body {
-    padding: 60px;
+/**
+ * Image Frog
+ */
+
+.imgfrog {
     display: flex;
+    padding: 20px 40px 0;
+}
+
+.imgfrog img {
+    --size: 140px;
+
+    display: block;
+    height: var(--size);
+    width: var(--size);
+    z-index: 3;
+}
+
+@media screen and (min-width: 960px) {
+    .imgfrog {
+        display: none;
+    }
+}
+
+/**
+ * Login Body
+ */
+
+.login_body {
     position: relative;
-    max-width: 450px;
+    box-sizing: border-box;
+    display: grid;
     height: 550px;
     max-height: 550px;
-    margin-top: 140px;
-    margin-left: 5%;
-    background-color: rgb(0, 0, 0, 0.9);
+    width: 100%;
+    max-width: 450px;
+    padding: 60px 30px;
     border-radius: 40px;
-    box-sizing: border-box;
-    width: 450px;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+}
 
+.login_body > .login_box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+
+.login_body > .login_box > form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 25px;
 }
 
 .login_body h2 {
     font-size: 32px;
     color: #fff;
-    margin-top: -6px;
-    font-family: 'Inter', sans-serif;
-    margin-left: 10px;
-
+    margin: 0;
+    font-family: "Inter", sans-serif;
 }
 
 .login_body input {
     height: 60px;
-    width: 340px;
+    width: 100%;
     color: #fff;
     background-color: #333;
     border: none;
@@ -72,30 +115,21 @@ body::before {
     box-sizing: border-box;
     outline: none;
     font-size: 18px;
-
 }
 
 .login_body input:hover {
     background-color: #444;
 }
 
-.input_box {
-    margin-bottom: 25px;
-
-}
-
 .login_body button.submit {
-    margin-top: 60px;
+    font-size: 16px;
     height: 50px;
     width: 100%;
     color: #fff;
-    background-color: #00D448;
+    background-color: #00d448;
     border-radius: 30px;
     font-weight: bold;
-    font-size: 16px;
     border: none;
-    margin-bottom: 20px;
-
 }
 
 .login_body button.submit:hover {
@@ -104,23 +138,39 @@ body::before {
 }
 
 .login_body button.submitaccount {
+    font-size: 16px;
     height: 50px;
     width: 100%;
     color: #000;
     background-color: #f1f1f1;
     border-radius: 30px;
     font-weight: bold;
-    font-size: 16px;
     border: none;
-    margin-bottom: 10px;
-
-
 }
 
 .login_body button.submitaccount:hover {
     background-color: #9b9b9b;
     cursor: pointer;
 }
+
+@media screen and (min-width: 450px) {
+    .login_body {
+        padding: 60px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .login_body {
+        width: 450px;
+        margin-top: 140px;
+        margin-left: 5%;
+        z-index: 0;
+    }
+}
+
+/**
+ * Other Elements
+ */
 
 .support {
     display: flex;
@@ -143,7 +193,6 @@ body::before {
     text-decoration: none;
 }
 
-
 .support input {
     width: 15px;
     height: 15px;
@@ -153,8 +202,7 @@ body::before {
     display: flex;
     align-items: center;
     font-size: 15px;
-    font-family: 'Inter', sans-serif;
-
+    font-family: "Inter", sans-serif;
 }
 
 .remember span {
@@ -163,9 +211,13 @@ body::before {
     color: white;
 }
 
+/**
+ * Footer
+ */
+
 .footer {
     width: 100%;
-    height: 70px;
+    height: var(--footer-height);
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -173,25 +225,23 @@ body::before {
     display: inline-flex;
     flex-direction: column;
     position: fixed;
-    bottom: 10px;
-
+    bottom: var(--footer-bottom);
+    z-index: 1;
 }
 
 .footer p {
-    color: white;
-    font-family: 'Inter', sans-serif;
-    margin-top: 20px;
     margin-left: 50px;
+    margin-top: 20px;
+    line-height: normal;
+    font-family: "Inter", sans-serif;
     font-size: 15px;
     font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    font-weight: bold;
-
+    font-weight: normal;
+    color: white;
 }
 
 .footer a {
-    color: #00D448;
+    color: #00d448;
     font-style: normal;
     font-weight: 200;
     line-height: normal;
@@ -200,20 +250,36 @@ body::before {
 }
 
 .footer h3 {
-    color: white;
-    font-family: 'Inter', sans-serif;
-    text-align: left;
-    margin-top: -10px;
     margin-left: 50px;
+    margin-top: -10px;
+    line-height: normal;
+    text-align: left;
+    font-family: "Inter", sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 200;
-    line-height: normal;
-    font-weight: bold;
+    font-weight: normal;
+    color: white;
+}
+
+@media screen and (min-width: 960px) {
+    .footer {
+        --footer-height: 70px;
+        z-index: 0;
+    }
+
+    .footer p {
+        font-style: none;
+        font-weight: bold;
+    }
+
+    .footer h3 {
+        font-weight: bold;
+    }
 }
 
 #sup {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     color: white;
     margin-top: 10px;
     margin-left: 04px;
@@ -234,32 +300,23 @@ body::before {
     margin-top: -475px;
     background-color: rgb(0, 0, 0, 0.9);
     padding: 10px;
-
-
 }
 
 #nome {
     margin-left: 20%;
-    font-family: 'Krona One', sans-serif;
-    color: #00D448;
+    font-family: "Krona One", sans-serif;
+    color: #00d448;
     font-size: 150px;
 }
 
-.imgfrog {
-    display: none;
-
-}
-
-@media screen and (min-width:900px) and (max-width:1600px) {
+@media screen and (min-width: 900px) and (max-width: 1600px) {
     #nome {
         margin-left: 50%;
         font-size: 120px;
     }
-
-
 }
 
-@media screen and (min-width:0px) and (max-width:960px) {
+@media screen and (min-width: 0px) and (max-width: 960px) {
     #nome {
         display: none;
     }
@@ -268,69 +325,17 @@ body::before {
         display: none;
     }
 
-    .footer {
-        z-index: 1;
-
-    }
-
-    .footer p {
-        font-size: 15px;
-        font-style: none;
-        font-weight: normal;
-    }
-
     #a2 {
         font-size: 15px;
         font-style: none;
         font-weight: normal;
-    }
-    .footer{
-        height: 85px;
-    }
-    .footer h3 {
-        font-size: 15px;
-        font-style: none;
-        font-weight: normal;
-    }
-
-    .login_body {
-        z-index: 2;
-        margin-top: 40px;
-        margin-left: 37px;
-    }
-
-    .imgfrog {
-        display: flex;
-
-
-
-    }
-
-    .imgfrog img {
-        display: flex;
-        position: center;
-        margin-top: 60px;
-        margin-left: 193px;
-        height: 140px;
-        width: 140px;
-        z-index: 3;
     }
 
     .espace {
         height: 1vh;
     }
 
-    .login_body button.submit {
-        font-size: 20px;
-    }
-
-    .login_body button.submitaccount {
-        font-size: 20px;
-    }
-
     .remember span {
         font-size: 18px;
     }
-
-
 }
