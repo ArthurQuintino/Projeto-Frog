@@ -75,6 +75,9 @@ body {
     border-radius: 100%;
     overflow: hidden;
 }
+.profile__image img{
+    width: 100%;
+}
 
 .profile__name {
     font-family: 'Krona One', sans-serif;
